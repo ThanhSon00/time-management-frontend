@@ -1,3 +1,10 @@
+# 1.0.0 (2025-05-25)
+
+
+### Bug Fixes
+
+* config to run CI ([5a82779](https://github.com/ThanhSon00/time-management-frontend/commit/5a82779bbabaec2e2e8a6bc3ca6706d0a625af92))
+
 ## [3.67.2](https://github.com/ixartz/Next-js-Boilerplate/compare/v3.67.1...v3.67.2) (2025-05-09)
 
 
