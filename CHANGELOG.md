@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/ThanhSon00/time-management-frontend/compare/v1.0.0...v1.0.1) (2025-05-25)
+
+
+### Bug Fixes
+
+* remove i18n test ([f25a138](https://github.com/ThanhSon00/time-management-frontend/commit/f25a138a680a9bb22c8ae7ed954acdd816548fe5))
+
 # 1.0.0 (2025-05-25)
 
 
