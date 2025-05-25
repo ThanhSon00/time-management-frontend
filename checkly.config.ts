@@ -8,11 +8,11 @@ const sendDefaults = {
 };
 
 // FIXME: Add your production URL
-const productionURL = 'https://demo.nextjs-boilerplate.com';
+const productionURL = 'https://thanhson.demo.nextjs-boilerplate.com';
 
 const emailChannel = new EmailAlertChannel('email-channel-1', {
   // FIXME: add your own email address, Checkly will send you an email notification if a check fails
-  address: 'contact@creativedesignsguru.com',
+  address: 'phanson9999999@gmail.com',
   ...sendDefaults,
 });
 
