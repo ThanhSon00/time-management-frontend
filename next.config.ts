@@ -12,6 +12,9 @@ const baseConfig: NextConfig = {
   poweredByHeader: false,
   reactStrictMode: true,
   serverExternalPackages: ['@electric-sql/pglite'],
+  images: {
+    remotePatterns: [new URL('https://www.pngkey.com/**')],
+  },
 };
 
 // Initialize the Next-Intl plugin
