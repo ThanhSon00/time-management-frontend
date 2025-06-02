@@ -15,6 +15,8 @@ jobs:
 
     name: Build with ${{ matrix.node-version }}
     runs-on: ubuntu-latest
+    environment:
+      name: development
 
     steps:
       - uses: actions/checkout@v4
