@@ -12,17 +12,14 @@ export default function SignInPage() {
     setLoading(true);
     setError('');
     try {
-      throw new Error('Not implemented'); // Simulate an error for demonstration purposes
-      // Replace with your actual API endpoint
-      // const res = await fetch('/api/login', {
-      //   method: 'POST',
-      //   headers: { 'Content-Type': 'application/json' },
-      //   body: JSON.stringify({ email }),
-      // });
-      // if (!res.ok) {
-      //   throw new Error('Login failed');
-      // }
-      // Handle success (redirect, show message, etc.)
+      const res = await fetch('/api/login', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email }),
+      });
+      if (!res.ok) {
+        throw new Error('Login failed');
+      }
     } catch (err: any) {
       console.error('Login error:', err);
       setError('Login failed. Please try again.');

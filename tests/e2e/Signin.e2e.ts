@@ -2,7 +2,11 @@ import { expect, test } from '@playwright/test';
 
 // Existing test (simulating an error) – unchanged
 test.describe('Sign In Page', () => {
-  test('Sign In Page E2E Test', async ({ page }) => {
+  test('Sign In Page – Fail Login', async ({ page }) => {
+    await page.route('/api/login', (route) => {
+      route.fulfill({ status: 400, body: JSON.stringify({ success: false }) });
+    });
+
     // Navigate to the signin page (adjust the URL as needed)
     await page.goto('/sign-in');
 
